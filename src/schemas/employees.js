@@ -7,7 +7,7 @@ const employeeSchema = new Schema({
     last_name: { type: String, required: true },
     contact_number: { type: String, required: true },
     email: { type: String, lowercase: true, required: true },
-    dob: { type: Date, required: true },
+    dob: { type: String, required: true },
     address: {
         street_address: { type: String, required: true },
         city: { type: String, require: true },
@@ -15,8 +15,8 @@ const employeeSchema = new Schema({
         country: { type: String, required: true}
     },
     skills: [{
-         skill: { type: Number, required: true },
-         yearOfExp: { type: Number, required: true },
+         skill: { type: String, required: true },
+         year_of_exp: { type: Number, required: true },
          seniority_rating: { type: String, required: true }
     }]
 });

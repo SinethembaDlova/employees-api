@@ -24,7 +24,7 @@ module.exports = async (req, res) => {
 
   try {
     const employeeTobeUpdated = await Employee.updateOne({ _id: id }, updates);
-    if (employeeTobeUpdated.deletedCount > 0) {
+    if (employeeTobeUpdated.matchedCount > 0) {
         res.status(200).json({ messege: "Employee successfully updated" });
       } else {
         res.status(204).json({ message: "No employee with ID was found" });
