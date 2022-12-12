@@ -4,7 +4,8 @@
   "description": "API that gives Tangent Solutions access to Employee datasets.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js",
+    "test": "mocha 'tests/**/*.js' --timeout 60000 --exit"
   },
   "repository": {
     "type": "git",
