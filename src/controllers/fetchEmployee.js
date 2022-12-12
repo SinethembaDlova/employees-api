@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
   const { id } = req.params;
   try {
     const employee = await Employee.findOne({ _id: id });
-    if (employee.length > 0) {
+    if (employee) {
         res.status(200).json({ data: [employee] });
       } else {
         res.status(204).json({ data: [] });
