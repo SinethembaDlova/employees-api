@@ -3,7 +3,7 @@ const Employee = require("../schemas/employees");
 module.exports = async (req, res) => {
   const { id } = req.params;
   try {
-    const employee = await Employee.findById(id);
+    const employee = await Employee.findOne({ _id: id });
     if (employee.length > 0) {
         res.status(200).json({ data: [employee] });
       } else {
