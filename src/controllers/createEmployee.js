@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
         dob,
         address,
         skills });
-      res.status(201).json({ data: employee });
+      res.status(201).json({ employee });
     } catch (error) {
         res.status(400).json({ error });
     }
