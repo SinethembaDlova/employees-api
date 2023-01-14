@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
   try {
     const employee = await Employee.findOne({ _id: id });
     if (employee) {
-        res.status(200).json({ employee });
+        res.status(200).json( employee );
       } else {
         res.status(204).json({ message: 'No employee with the specified id.' });
       }

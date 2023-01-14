@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
     if (employeeTobeUpdated.matchedCount > 0) {
       const employee = await Employee.findOne({ _id: id });
       if (employee) {
-        res.status(200).json({ employee });
+        res.status(200).json( employee );
       }     
     } 
   } catch (error) {
