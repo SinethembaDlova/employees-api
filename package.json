@@ -4,7 +4,7 @@
   "description": "API that gives Tangent Solutions access to Employee datasets.",
   "main": "index.js",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "scripts": {
     "start": "nodemon index.js",

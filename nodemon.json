@@ -1,6 +1,6 @@
 {
     "env": {
-       "MONGO_DB": "mongodb://localhost:27017/employees"
+       "MONGO_DB": "mongodb+srv://side_projects:OfferZen@cluster0.mjbp9.mongodb.net/?retryWrites=true&w=majority"
     }
 }
 
